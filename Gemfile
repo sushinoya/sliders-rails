@@ -2,6 +2,12 @@ source 'https://rubygems.org'
 
 ruby '2.3.1'
 
+# fullcalendar-rails gem to display weekly and monthly calendars
+gem 'fullcalendar-rails'
+
+ # momentJS is used to parse, validate, manipulate, and display dates and times
+gem 'momentjs-rails'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.2.7.1'
 
