@@ -8,5 +8,12 @@ class Calendar < ActiveRecord::Base
   validates :end_date,      presence: true
   validates :short_url,     uniqueness: true
   validates :last_updated,  presence: true
+  validate :start_before_end_date
+
+  private
+
+  def start_before_end_date
+    errors.add(:start_date, 'End Date must be after Start Date') if start_date >= end_date
+  end
 
 end
