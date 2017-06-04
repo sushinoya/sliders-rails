@@ -6,10 +6,11 @@ class CreateCalendars < ActiveRecord::Migration
       t.datetime   :end_date,                  null: false, default: Time.now
       t.datetime   :last_updated,              null: false
       t.string     :short_url
+
       t.timestamps                             null: false
     end
 
-    add_index :follow_requests, :creator_id
+    add_index :calendars, :creator_id
 
   end
 end
