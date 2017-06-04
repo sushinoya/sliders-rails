@@ -9,7 +9,7 @@ class CreateCalendars < ActiveRecord::Migration
       t.timestamps                             null: false
     end
 
-    add_index :follow_requests, :creator_id
+    add_index :calendars, :creator_id
 
   end
 end
