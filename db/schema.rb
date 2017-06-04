@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 20170603135757) do
 
   create_table "calendars", force: :cascade do |t|
     t.integer  "creator_id",                                   null: false
-    t.datetime "start_date",   default: '2017-06-04 05:40:35', null: false
-    t.datetime "end_date",     default: '2017-06-04 05:40:35', null: false
+    t.datetime "start_date",   default: '2017-06-04 07:31:01', null: false
+    t.datetime "end_date",     default: '2017-06-04 07:31:01', null: false
     t.datetime "last_updated",                                 null: false
     t.string   "short_url"
     t.datetime "created_at",                                   null: false
@@ -30,8 +30,8 @@ ActiveRecord::Schema.define(version: 20170603135757) do
 
   create_table "timeslots", force: :cascade do |t|
     t.integer  "calendar_id",                                 null: false
-    t.datetime "start_time",  default: '2017-06-04 05:40:35', null: false
-    t.datetime "end_time",    default: '2017-06-04 05:40:35', null: false
+    t.datetime "start_time",  default: '2017-06-04 07:31:01', null: false
+    t.datetime "end_time",    default: '2017-06-04 07:31:01', null: false
     t.datetime "created_at",                                  null: false
     t.datetime "updated_at",                                  null: false
   end

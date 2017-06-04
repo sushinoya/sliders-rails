@@ -1,6 +1,6 @@
 class Timeslot < ActiveRecord::Base
 
-  belongs_to: calendar, inverse_of: :timeslot
+  belongs_to :calendar, inverse_of: :timeslots
 
   validates :start_time,    presence: true
   validates :end_time,      presence: true

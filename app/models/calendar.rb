@@ -1,6 +1,9 @@
 class Calendar < ActiveRecord::Base
 
-  belongs_to :creator, class_name: 'User', inverse_of: :calendars
+  belongs_to :creator, class_name: 'User'
+  # belongs_to :user, inverse_of: :calendars
+
+
   has_many   :members, class_name: 'User'
   has_many   :timeslots, inverse_of: :calendar
 
