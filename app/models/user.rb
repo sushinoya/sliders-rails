@@ -1,8 +1,9 @@
 class User < ActiveRecord::Base
 
-  # Add validations for uniqueness of emails and names if needed. Omitted
-  # as of now
-  validates :email,    presence: true
-  validates :name, presence: true
+  has_many :calendars, inverse_of: :user
+
+  # Add validations for uniqueness of emails and names if needed.
+  validates :email, presence: true
+  validates :name,  presence: true
 
 end
