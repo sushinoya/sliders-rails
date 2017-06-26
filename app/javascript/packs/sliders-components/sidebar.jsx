@@ -1,5 +1,7 @@
 import React from 'react'
 import { Button } from 'semantic-ui-react'
+import { Select } from 'semantic-ui-react'
+import { Icon } from 'semantic-ui-react'
 
 export default class Sidebar extends React.Component {
   render() {
@@ -14,20 +16,21 @@ export default class Sidebar extends React.Component {
 
         <div className="editing">
           <div className="label editing-header">Editing For:</div>
-          <div className="user">Suyash</div>
-          <div className="ui selection dropdown">
-            <input type="hidden"></input>
-            <i className="dropdown icon"></i>
-            <div className="default text">Member</div>
-            <div className="menu">
-              <div className="item" data-value="1">Male</div>
-              <div className="item" data-value="0">Female</div>
-            </div>
-          </div>
+          <div className="user">Cool Marr</div>
+          <Select placeholder='Select Member' options={[{key: '1', text: 'Neil Patrick Harris'}, {key: '2', text: 'White Castle Waiter'}]} />
           <Button className="sidebar-button">Change Member</Button>
+          <Icon className="add-user" name='add user'/>
+        </div>
+
+        <div className="other-users">
+          <div className="label">Accomplices Online</div>
+          <ul>
+            <li>Santa Claus</li>
+            <li>Marie</li>
+          </ul>
         </div>
 
       </div>
       );
-  }
+}
 }
