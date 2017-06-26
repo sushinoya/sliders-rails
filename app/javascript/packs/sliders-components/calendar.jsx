@@ -5,6 +5,7 @@ import 'react-big-calendar/lib/css/react-big-calendar.css'
 
 BigCalendar.momentLocalizer(moment)
 
+// Calendar app
 const myEventsList = []
 const MyCalendar = props => (
   <div>
@@ -19,8 +20,14 @@ const MyCalendar = props => (
 export default class Calendar extends React.Component {
   render() {
     return (
-      <div>
-        Calendar
+      <div className="calendar-stage">
+        <div>
+          <div className="calendar-header">Main Calendar</div>
+          <div className="calendar-upload">
+            <span>Upload Calendar(s):</span>
+            <input multiple type="file" className="upload-btn"></input>
+          </div>
+        </div>
         <MyCalendar/>
       </div>
       );

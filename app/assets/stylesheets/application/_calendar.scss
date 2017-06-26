@@ -1,0 +1,24 @@
+.calendar-header {
+  font-size: 40px;
+  text-align: center;
+}
+
+// Override default calendar css
+.rbc-time-view {
+  margin-bottom: 30px;
+}
+
+.calendar-upload {
+  font-size: 12px;
+  font-style: italic;
+  padding: 10px;
+  position: relative;
+
+  .upload-btn {
+    color: #ff0000;
+    left: 120px;
+    position: absolute;
+    top: 10px;
+  }
+}
+
