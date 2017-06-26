@@ -17,7 +17,6 @@ html lang='en'
     = csrf_meta_tags
 
   body lang='en' class=css_class_for_controller_action(controller)
-    = javascript_pack_tag 'sliders_app'
     = render partial: 'navbar'
     = render 'application/flash_messages'
     = yield
