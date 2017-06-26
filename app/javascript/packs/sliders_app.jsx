@@ -1,18 +1,16 @@
 import React from 'react'
+import 'semantic-ui-css/semantic.min.css';
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
+
 import Sidebar from './sliders-components/sidebar.jsx'
 import Calendar from './sliders-components/calendar.jsx'
 
-const Hello = props => (
-  <div>Hello {props.name}!</div>
-)
-
-Hello.defaultProps = {
+Sidebar.defaultProps = {
   name: 'David'
 }
 
-Hello.propTypes = {
+Sidebar.propTypes = {
   name: PropTypes.string
 }
 
