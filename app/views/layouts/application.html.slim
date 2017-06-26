@@ -4,13 +4,13 @@ html lang='en'
   head
 
     title Slider's App
-    = stylesheet_link_tag '//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css'
     = javascript_include_tag :application, 'data-turbolinks-eval': false
     meta content='IE=edge' http-equiv='X-UA-Compatible'
 
     meta charset='utf-8'
     meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'
 
+    = stylesheet_pack_tag 'sliders_app'
     = stylesheet_link_tag :application, media: 'all', 'data-turbolinks-track': true
     = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,900'
 
