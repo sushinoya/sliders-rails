@@ -10,13 +10,13 @@ html lang='en'
     meta charset='utf-8'
     meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'
 
+    = stylesheet_pack_tag 'sliders_app'
     = stylesheet_link_tag :application, media: 'all', 'data-turbolinks-track': true
     = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,900'
 
     = csrf_meta_tags
 
   body lang='en' class=css_class_for_controller_action(controller)
-
     = render partial: 'navbar'
     = render 'application/flash_messages'
     = yield

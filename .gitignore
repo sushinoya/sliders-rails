@@ -20,3 +20,5 @@ coverage/
 
 # Ignore redis binary dump (dump.rdb) files
 dump.rdb
+/public/packs
+/node_modules
