@@ -16,3 +16,6 @@
 #= require turbolinks
 #= require cocoon
 #= require_tree .
+#= require react
+#= require react_ujs
+#= require components

@@ -3,9 +3,10 @@ html lang='en'
 
   head
 
-    title Rails Project Template
-
+    title Slider's App
+    = javascript_include_tag :application, 'data-turbolinks-eval': false
     meta content='IE=edge' http-equiv='X-UA-Compatible'
+
     meta charset='utf-8'
     meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'
 
@@ -16,10 +17,6 @@ html lang='en'
 
   body lang='en' class=css_class_for_controller_action(controller)
 
-    = render 'common/flash_messages'
-    = render partial: 'header'
+    = render partial: 'navbar'
+    = render 'application/flash_messages'
     = yield
-    = render 'employers/modals/form_modal'
-    = render partial: 'footer'
-
-    = javascript_include_tag :application, 'data-turbolinks-track': true
