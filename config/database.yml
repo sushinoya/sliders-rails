@@ -78,8 +78,17 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+
+staging:
+  <<: *default
+  database: sliders-rails_staging
+  username: sliders-rails
+  password: <%= ENV['SLIDERS-RAILS-DATABASE_PASSWORD'] %>
+
+
 production:
   <<: *default
   database: sliders-rails_production
   username: sliders-rails
-  password: <%= ENV['SLIDERS-RAILS_DATABASE_PASSWORD'] %>
+  password: <%= ENV['SLIDERS-RAILS-DATABASE_PASSWORD'] %>
+

@@ -12,6 +12,9 @@
 !/log/.keep
 /tmp
 
+# Ignore local database config (temporarily disabled)
+# config/database.yml
+
 # Ignore byebug history
 .byebug_history
 
